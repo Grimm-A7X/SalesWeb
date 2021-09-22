@@ -51,7 +51,7 @@ namespace SalesWebMvc.Controllers
                 return RedirectToAction(nameof(Error), new { message = "Id not provided" });
             }
 
-            var obj = _sellerService.FindByid(id.Value);
+            var obj = _sellerService.FindById(id.Value);
             if (id == null)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id not found" });
@@ -74,7 +74,7 @@ namespace SalesWebMvc.Controllers
                 return RedirectToAction(nameof(Error), new { message = "Id not provided" });
             }
 
-            var obj = _sellerService.FindByid(id.Value);
+            var obj = _sellerService.FindById(id.Value);
             if (id == null)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id not found" });
@@ -90,7 +90,7 @@ namespace SalesWebMvc.Controllers
                 return RedirectToAction(nameof(Error), new { message = "Id not provided" });
             }
 
-            var obj = _sellerService.FindByid(id.Value);
+            var obj = _sellerService.FindById(id.Value);
             if (obj == null)
             {
                 return RedirectToAction(nameof(Error), new { message = "Id not found" });
